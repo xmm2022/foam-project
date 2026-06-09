@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 600000
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+      password: ${REDIS_PWD}
+      database: ${REDIS_DB}
+
+emby:
+  apikey: ${EMBY_APIKEY}
+  url: ${EMBY_URL}
+  copyfromuserid: ${EMBY_COPYFROMUSERID}
+
+tmdb:
+  apitoken: ${TMDB_APITOKEN}
+  imageUrl: ${TMDB_IMAGE_URL}
+  apiKey: ${TMDB_APIKEY}
+
+# Legacy local license fallback, inactive by default.
+# license:
+#   file: ${LICENSE_FILE:}
+
+embyHubSearch:
+  url: ${EMBY_HUB_SEARCH_URL:}
+
+#rocketmq:
+#  name-server: ${ROCKETMQ_NAME_SERVER:localhost:9876}
+#  producer:
+#    group: ${ROCKETMQ_PRODUCER_GROUP:foam-api-producer-group}

@@ -1,0 +1,17 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.baomidou.mybatisplus.core.mapper.BaseMapper
+ *  org.apache.ibatis.annotations.Mapper
+ */
+package com.una.embyhub.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.una.embyhub.model.entity.RocketMQFailedMessage;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface RocketMQFailedMessageMapper
+extends BaseMapper<RocketMQFailedMessage> {
+}

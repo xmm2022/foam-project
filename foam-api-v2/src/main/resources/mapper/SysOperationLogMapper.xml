@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.una.embyhub.mapper.SysOperationLogMapper">
+  <resultMap id="BaseResultMap" type="com.una.embyhub.model.entity.SysOperationLog">
+    <!--@mbg.generated-->
+    <!--@Table sys_operation_log-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="operation_content" jdbcType="VARCHAR" property="operationContent" />
+    <result column="operation_type" jdbcType="VARCHAR" property="operationType" />
+    <result column="operation_time" jdbcType="TIMESTAMP" property="operationTime" />
+    <result column="operator" jdbcType="VARCHAR" property="operator" />
+    <result column="request_url" jdbcType="VARCHAR" property="requestUrl" />
+    <result column="request_method" jdbcType="VARCHAR" property="requestMethod" />
+    <result column="request_params" jdbcType="VARCHAR" property="requestParams" />
+    <result column="response_result" jdbcType="VARCHAR" property="responseResult" />
+    <result column="ip_address" jdbcType="VARCHAR" property="ipAddress" />
+    <result column="create_datetime" jdbcType="TIMESTAMP" property="createDatetime" />
+    <result column="update_datetime" jdbcType="TIMESTAMP" property="updateDatetime" />
+    <result column="create_user_name" jdbcType="VARCHAR" property="createUserName" />
+    <result column="update_user_name" jdbcType="VARCHAR" property="updateUserName" />
+    <result column="update_user_id" jdbcType="BIGINT" property="updateUserId" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="del_flag" jdbcType="INTEGER" property="delFlag" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, operation_content, operation_type, operation_time, `operator`, request_url, request_method, 
+    request_params, response_result, ip_address, create_datetime, update_datetime, create_user_name, 
+    update_user_name, update_user_id, create_user_id, del_flag
+  </sql>
+</mapper>
